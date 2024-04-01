@@ -1,5 +1,7 @@
 package dev.lpa.game;
 
+import dev.lpa.pirate.Pirate;
+
 import java.util.Map;
 
 public class PirateGame extends Game<Pirate>{
@@ -12,7 +14,7 @@ public class PirateGame extends Game<Pirate>{
 
     @Override
     public Pirate createNewPlayer(String name) {
-        return new Pirate(name, Pirate.Weapon.AXE);
+        return new Pirate(name);
     }
 
     @Override

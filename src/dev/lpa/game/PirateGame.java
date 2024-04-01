@@ -1,11 +1,10 @@
 package dev.lpa.game;
 
-import java.util.List;
 import java.util.Map;
 
 public class PirateGame extends Game<Pirate>{
 
-    static List<List<String>> levelMap =
+//    static List<List<String>> levelMap =
 
     public PirateGame(String gameName) {
         super(gameName);

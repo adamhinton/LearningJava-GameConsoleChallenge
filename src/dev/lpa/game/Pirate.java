@@ -1,5 +1,8 @@
 package dev.lpa.game;
 
+import java.util.Map;
+import java.util.Set;
+
 public class Pirate implements Player{
 
     enum Weapon{
@@ -9,13 +12,16 @@ public class Pirate implements Player{
         }
     }
 
+    private final Map<String, Integer> gameData;
+    private Set<String> townsVisited;
     private final String name;
+    private Weapon currentWeapon;
 
-    public Pirate(String name) {
+    public Pirate(Map<String, Integer> gameData, String name, Weapon currentWeapon) {
+        this.gameData = gameData;
         this.name = name;
+        this.currentWeapon = currentWeapon;
     }
-
-
 
     @Override
     public String name() {

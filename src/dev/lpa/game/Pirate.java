@@ -17,8 +17,7 @@ public class Pirate implements Player{
     private final String name;
     private Weapon currentWeapon;
 
-    public Pirate(Map<String, Integer> gameData, String name, Weapon currentWeapon) {
-        this.gameData = gameData;
+    public Pirate(String name, Weapon currentWeapon) {
         this.name = name;
         this.currentWeapon = currentWeapon;
     }

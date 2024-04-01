@@ -1,5 +1,8 @@
 package dev.lpa.game;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
 import java.util.Set;
 
 public class Pirate implements Player{
@@ -34,6 +37,13 @@ public class Pirate implements Player{
                 }
             }
             return values()[0];
+        }
+
+        public static List<Weapon> getWeaponsByLevel (int levelOfPlay){
+            List<Weapon> weapons = new ArrayList<>(EnumSet.allOf(Weapon.class));
+            weapons.removeIf(w -> w.minLevel > levelOfPlay);
+            // return remaining weapons
+            return weapons;
         }
     }
 

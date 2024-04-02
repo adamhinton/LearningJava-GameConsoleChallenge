@@ -1,20 +1,25 @@
+// Each town has multiple Features
+// Encountering one + or - your health points
+
 package dev.lpa.pirate;
 
 public enum Feature {
 
-    SILVER_COIN(5),
-    GOLD_COIN(10),
-    GOLD_RING(125),
-    PEARL_NECKLACE(250),
-    GOLD_BAR(500);
+    ALLIGATOR(-45),
+    ALOE(5),
+    JELLYFISH(-10),
+    PINEAPPLE(10),
+    SNAKE(-25),
+    SPRING(25),
+    SUN_POISON(-15);
 
-    private final int worth;
+    private final int healthPoints;
 
-    Feature(int worth) {
-        this.worth = worth;
+    Feature(int healthPoints) {
+        this.healthPoints = healthPoints;
     }
 
-    public int getWorth() {
-        return worth;
+    public int getHealthPoints() {
+        return healthPoints;
     }
 }

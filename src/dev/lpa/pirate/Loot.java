@@ -1,3 +1,6 @@
+// Each town has multiple Loots
+// Finding loot
+
 package dev.lpa.pirate;
 
 public enum Loot {

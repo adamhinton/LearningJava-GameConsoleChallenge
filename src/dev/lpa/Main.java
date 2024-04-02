@@ -1,6 +1,7 @@
 package dev.lpa;
 
 import dev.lpa.pirate.Pirate;
+import dev.lpa.pirate.PirateGame;
 import dev.lpa.pirate.Weapon;
 
 public class Main {
@@ -18,7 +19,15 @@ public class Main {
         System.out.println(tim);
 
 
+        PirateGame.getTowns(0).forEach(System.out::println);
+        System.out.println("-------------------------------");
+        PirateGame.getTowns(1).forEach(System.out::println);
 
+
+//        var console = new GameConsole<>(new PirateGame("The Pirate Game"));
+//        int playerIndex = console.addPlayer();
+//
+//        console.playGame(playerIndex);
 
     }
 }
